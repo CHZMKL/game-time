@@ -22,8 +22,14 @@ describe('Ball', function() {
 
     it('should move right', function(){
       assert.equal(ball.x, 250);
-      ball.moveright();
+      ball.moveRight();
       assert.equal(ball.x, 251);
+    });
+
+    it('should move up', function(){
+      assert.equal(ball.y, 500);
+      ball.moveUp();
+      assert.equal(ball.y, 499);
     });
   });
 });
