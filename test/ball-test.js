@@ -31,5 +31,13 @@ describe('Ball', function() {
       ball.moveUp();
       assert.equal(ball.y, 499);
     });
+
+    it('should change y direction when it hits y=0 of the world', function(){
+
+    });
+
+    it('should change x direction when it hits the max or min x of the world', function(){
+
+    });
   });
 });
