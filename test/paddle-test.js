@@ -33,6 +33,15 @@ describe('Paddle', function() {
       assert.equal(paddle.x, 251);
       paddle.moveLeft();
       assert.equal(paddle.x, 250);
+
+    it('should stop before the left side of the paddle makes contact with the left stadium border', function(){
+      assert.equal(paddle.x, +1);
+
+    } );
+
+    it('should stop before the right side of the paddle makes contact with the right stadium border', function(){
+      assert.equal(paddle.x, -1);
+    });
     });
   });
 });
