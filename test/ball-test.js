@@ -23,13 +23,13 @@ describe('Ball', function() {
     it('should move right', function(){
       assert.equal(ball.x, 250);
       ball.moveRight();
-      assert.equal(ball.x, 251);
+      assert.equal(ball.x, 252);
     });
 
     it('should move up', function(){
       assert.equal(ball.y, 500);
       ball.moveUp();
-      assert.equal(ball.y, 499);
+      assert.equal(ball.y, 498);
     });
 
     it('should change y direction when it hits y=0 of the world', function(){
@@ -37,7 +37,7 @@ describe('Ball', function() {
     });
 
     it('should change x direction when it hits the max or min x of the world', function(){
-
+      ball.collisonDetectionX();
     });
   });
 });
