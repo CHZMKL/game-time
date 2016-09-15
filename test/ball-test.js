@@ -13,17 +13,23 @@ describe('Ball', function() {
     });
 
     it('should have a default y coordinate', function() {
-      assert.equal(ball.y, 500);
+      assert.equal(ball.y, 480);
     });
 
     it('should have a default radius', function() {
       assert.equal(ball.radius, 10);
     });
 
-    it('should move right', function(){
+    it('should move right', function() {
       assert.equal(ball.x, 250);
       ball.moveRight();
       assert.equal(ball.x, 251);
+    });
+
+    it('should move left', function() {
+      assert.equal(ball.x, 251);
+      ball.moveLeft();
+      assert.equal(ball.x, 250);
     });
 
     it('should move up', function(){
@@ -32,12 +38,12 @@ describe('Ball', function() {
       assert.equal(ball.y, 499);
     });
 
-    it('should change y direction when it hits y=0 of the world', function(){
-
+    it('should move down', function() {
+      assert.equal(ball.y, 499);
+      ball.moveDown();
+      assert.equal(ball.y, 500);
     });
 
-    it('should change x direction when it hits the max or min x of the world', function(){
 
-    });
   });
 });
