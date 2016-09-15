@@ -33,15 +33,15 @@ describe('Ball', function() {
     });
 
     it('should move up', function(){
-      assert.equal(ball.y, 500);
+      assert.equal(ball.y, 480);
       ball.moveUp();
-      assert.equal(ball.y, 499);
+      assert.equal(ball.y, 479);
     });
 
     it('should move down', function() {
-      assert.equal(ball.y, 499);
+      assert.equal(ball.y, 479);
       ball.moveDown();
-      assert.equal(ball.y, 500);
+      assert.equal(ball.y, 480);
     });
 
 
