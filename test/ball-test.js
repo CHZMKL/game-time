@@ -16,17 +16,21 @@ describe('Ball', function() {
       assert.equal(ball.y, 500);
     });
 
-    it('should have a default radius', function() {
-      assert.equal(ball.radius, 10);
+    it('should have a default height', function() {
+      assert.equal(ball.height, 10);
     });
 
-    it('should move right', function(){
+    it('should have a default width', function() {
+      assert.equal(ball.width, 10);
+    });
+
+    it('should be able to move right', function(){
       assert.equal(ball.x, 250);
       ball.moveRight();
       assert.equal(ball.x, 252);
     });
 
-    it('should move up', function(){
+    it('should be able to move up', function(){
       assert.equal(ball.y, 500);
       ball.moveUp();
       assert.equal(ball.y, 498);
