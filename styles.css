@@ -2,7 +2,6 @@ body {
 background-color: #F36A24;
 }
 .top-container {
-  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,18 +20,27 @@ background-color: #F36A24;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: blue;
+  padding-bottom: 50px;
 }
 
 .level-score {
   order: 1;
+  margin-top: 10px;
+  height: 500px;
+  width: 200px;
+  background-color: white;
 }
 
 canvas {
-  margin-bottom: 10px;
+  margin: 10px 5px;
   order: 2;
 }
 
 .instructions {
-  align-items: center;
   order: 3;
+  margin-top: 10px;
+  height: 500px;
+  width: 200px;
+  background-color: white;
 }
