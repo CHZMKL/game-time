@@ -1,15 +1,38 @@
 body {
-background-color: #E5F3F2;
+background-color: #F36A24;
 }
-.container {
+.top-container {
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #E5F3F2;
+  background-color: blue;
 }
 
 .logo {
+  margin: 10px 0 5px;
   display: flex;
   flex-direction: column;
+  al
+  align-content: center;
+}
+
+.middle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.level-score {
+  order: 1;
+}
+
+canvas {
+  margin-bottom: 10px;
+  order: 2;
+}
+
+.instructions {
   align-items: center;
+  order: 3;
 }
