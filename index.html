@@ -3,14 +3,45 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <title>Game Time</title>
+  <title>Broncos Breakout</title>
 </head>
+<body>
+<section class="top-container">
   <header>
-      <h1> BRONCOS BREAKOUT </h1>
+      <img class="logo" src="images/BroncosBreakout.jpg">
     </header>
-    <body>
-      <canvas id="myCanvas" width="500" height="500"></canvas>
-    </body>
+</section>
+
+<section class="middle-container">
+  <section class="level-score">
+    <p class="level">Choose Your Opponent</p>
+      <select>
+        <option value="patriots">New England Patriots</option>
+        <option value="colts">Indianapolis Colts</option>
+        <option value="panthers">Carolina Panthers</option>
+      </select>
+    <p class="score">Score</p>
+      <input class="your-score"></input>
+  </section>
+
+  <body class="the-canvas">
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+  </body>
+
+  <section class="instructions">
+    <p class="how-to">How To Play</p>
+      <p class="play">
+        <li>First choose the team you'd like to play against</br></br>
+        <li>To START the game, press the <em>SPACEBAR</em>
+        </br></br>
+        <li>To move your Quarterback (paddle), press <em>left arrow</em> or <em>right arrow</em> keys</br></br>
+        <li>Each brick is worth <em>Two Points</em></br></br>
+      </p>
+    </section>
+
+</section>
+
   <script src="main.bundle.js"></script>
+
 </body>
 </html>
