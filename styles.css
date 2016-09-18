@@ -30,6 +30,7 @@ background-color: #F36A24;
   height: 500px;
   width: 200px;
   background-color: white;
+  border: 5px solid #F36A24;
 }
 
 canvas {
@@ -43,4 +44,5 @@ canvas {
   height: 500px;
   width: 200px;
   background-color: white;
+  border: 5px solid #F36A24;
 }
