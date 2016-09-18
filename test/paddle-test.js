@@ -26,11 +26,11 @@ describe('Paddle', function() {
     it('should move right', function(){
       assert.equal(paddle.x, 250);
       paddle.moveRight();
-      assert.equal(paddle.x, 251);
+      assert.equal(paddle.x, 260);
     });
 
     it('should move left', function(){
-      assert.equal(paddle.x, 251);
+      assert.equal(paddle.x, 260);
       paddle.moveLeft();
       assert.equal(paddle.x, 250);
     });
