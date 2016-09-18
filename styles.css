@@ -1,6 +1,17 @@
+@font-face {
+  font-family: Scoreboard;
+  src: url(fonts/Scoreboard.ttf);
+}
+
+@font-face {
+  font-family: Broncos;
+  src: url(fonts/denbronccust.ttf);
+}
+
 body {
 background-color: #F36A24;
 }
+
 .top-container {
   display: flex;
   flex-direction: column;
@@ -27,15 +38,34 @@ background-color: #F36A24;
 .level-score {
   order: 1;
   margin-top: 10px;
-  height: 500px;
+  height: 250px;
   width: 200px;
   background-color: white;
   border: 5px solid #F36A24;
+  text-align: center;
+}
+
+.level, .score, .how-to {
+  font-family: Broncos;
+  font-size: 20px;
+  color: #F36A24;
+  border-bottom: 2px solid;
+  border-width: thin;
+}
+
+input {
+  width: 65px;
+  height: 50px;
+  font-family: Scoreboard;
+  /*border: none;*/
+  outline: none;
+  font-size: 40px;
 }
 
 canvas {
   margin: 10px 5px;
   order: 2;
+  border: 2px solid #F36A24;
 }
 
 .instructions {
@@ -45,4 +75,9 @@ canvas {
   width: 200px;
   background-color: white;
   border: 5px solid #F36A24;
+  text-align: center;
+}
+
+p.play {
+  font-family: Broncos;
 }
