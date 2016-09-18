@@ -71,13 +71,22 @@ canvas {
 .instructions {
   order: 3;
   margin-top: 10px;
-  height: 500px;
+  height: 350px;
   width: 200px;
   background-color: white;
   border: 5px solid #F36A24;
   text-align: center;
 }
 
-p.play {
+p.play, li  {
   font-family: Broncos;
+  font-size: 10px;
+  text-align: center;
+  list-style-type: none;
+  color: blue;
+}
+
+em {
+  color: red;
+  text-decoration: underline;
 }
