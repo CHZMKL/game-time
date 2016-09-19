@@ -10,13 +10,14 @@
 
 body {
 background-color: #F36A24;
+height: auto;
 }
 
 .top-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: blue;
+  background-color: #002244;
 }
 
 .logo {
@@ -31,7 +32,7 @@ background-color: #F36A24;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: blue;
+  background-color: #002244;
   padding-bottom: 10px;
 }
 
@@ -48,18 +49,19 @@ background-color: #F36A24;
 .level, .score, .how-to {
   font-family: Broncos;
   font-size: 20px;
-  color: red;
+  color: #002244;
   text-decoration: underline;
   border-width: thin;
 }
 
-input {
+.your-score {
   width: 65px;
   height: 50px;
   font-family: Scoreboard;
   /*border: none;*/
   outline: none;
   font-size: 40px;
+  margin:auto;
 }
 
 canvas {
@@ -83,7 +85,7 @@ p.play, li  {
   font-size: 12px;
   text-align: center;
   list-style-type: none;
-  color: blue;
+  color: #002244;
 }
 
 em {

@@ -28,6 +28,26 @@ describe('Ball and World Interactions', function() {
       ball.moveLeft();
       assert.equal(ball.x, 498);
     });
-    
+
+    it('should change x direction when it hits the left of the world', function(){
+      var ball = new Ball({x:2});
+      var stadium = new Stadium();
+      stadium.BallHittingWall(ball);
+      assert.equal(ball.x, 2);
+      ball.moveLeft();
+      assert.equal(ball.x, 0);
+      stadium.BallHittingWall(ball);
+      ball.moveRight();
+      assert.equal(ball.x, 2);
+    });
+
+    it.skip('should change Y directon when it collides with the paddle', function(){
+    });
+
+    it.skip('should change X direction to the right, when it collides with the right side of the paddle', function(){
+    });
+
+    it.skip('should change X direction to the left, when it collides with the left side of the paddle', function(){
+    });
 
 });
