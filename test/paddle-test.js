@@ -5,8 +5,7 @@ const Paddle = require('../lib/paddle.js');
 describe('Paddle', function() {
 
   context('has default size and position', function() {
-    var options = ({});
-    var paddle = new Paddle(options);
+    var paddle = new Paddle();
 
     it('should have a default x coordinate', function() {
       assert.equal(paddle.x, 250);
