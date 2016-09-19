@@ -3,21 +3,31 @@ const assert = chai.assert;
 const Ball = require('../lib/ball.js');
 const Stadium = require('../lib/world.js');
 
-describe('Ball', function() {
+describe('Ball and World Interactions', function() {
 
     it('should change y direction when it hits y=0 of the world', function(){
-      var ball = new Ball({y:1, x: 0});
-      ball.collisonDetectionY();
-      assert.equal(ball.y, 1);
+      var ball = new Ball({y:2});
+      var stadium = new Stadium();
+      stadium.BallHittingWall(ball);
+      assert.equal(ball.y, 2);
       ball.moveUp();
-      assert.equal(ball.y, -1);
-      ball.collisonDetectionY();
-      ball.moveUp();
-      assert.equal(ball.y, 1);
+      assert.equal(ball.y, 0);
+      stadium.BallHittingWall(ball);
+      ball.moveDown();
+      assert.equal(ball.y, 2);
     });
 
-    it('should change x direction when it hits the max or min x of the world', function(){
-      ball.collisonDetectionX();
+    it('should change x direction when it hits the right of the world', function(){
+      var ball = new Ball({x:498});
+      var stadium = new Stadium();
+      stadium.BallHittingWall(ball);
+      assert.equal(ball.x, 498);
+      ball.moveRight();
+      assert.equal(ball.x, 500);
+      stadium.BallHittingWall(ball);
+      ball.moveLeft();
+      assert.equal(ball.x, 498);
     });
-  });
+    
+
 });

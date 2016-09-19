@@ -35,40 +35,28 @@ describe('Ball', function() {
       ball.moveUp();
       assert.equal(ball.y, 498);
     });
-
-
-    it('should change x direction when it hits left side', function(){
-      var ball = new Ball({y:0, x: 13, speedX: -2});
-      ball.collisonDetectionX();
-      assert.equal(ball.x, 13);
-      ball.moveRight();
-      assert.equal(ball.x, 11);
-      ball.collisonDetectionX();
-      ball.moveRight();
-      assert.equal(ball.x, 13);
-    });
-
-    it('should change x direction when it hits right side', function(){
-      var ball = new Ball({y:0, x: 488, speedX: 2});
-      ball.collisonDetectionX();
-      assert.equal(ball.x, 488);
-      ball.moveRight();
-      assert.equal(ball.x, 490);
-      ball.collisonDetectionX();
-      ball.moveRight();
-      assert.equal(ball.x, 488);
-    });
-
-    it('should change y direction when it hits y=0 of the world', function(){
-      var ball = new Ball({y:3, x: 0});
-      ball.collisonDetectionY();
-      assert.equal(ball.y, 3);
-      ball.moveUp();
-      assert.equal(ball.y, 1);
-      ball.collisonDetectionY();
-      ball.moveUp();
-      assert.equal(ball.y, 3);
-    });
-
-  });
 });
+});
+
+
+    //
+    // it('should change x direction when it hits left side', function(){
+    //   var ball = new Ball({y:0, x: 13, speedX: -2});
+    //   ball.collisonDetectionX();
+    //   assert.equal(ball.x, 13);
+    //   ball.moveRight();
+    //   assert.equal(ball.x, 11);
+    //   ball.collisonDetectionX();
+    //   ball.moveRight();
+    //   assert.equal(ball.x, 13);
+    // });
+    //
+    // it('should change x direction when it hits right side', function(){
+    //   var ball = new Ball({y:0, x: 488, speedX: 2});
+    //   ball.collisonDetectionX();
+    //   assert.equal(ball.x, 488);
+    //   ball.moveRight();
+    //   assert.equal(ball.x, 490);
+    //   ball.collisonDetectionX();
+    //   ball.moveRight();
+    //   assert.equal(ball.x, 488);
