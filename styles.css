@@ -94,6 +94,15 @@ background-color: #F36A24;
   margin:auto;
 }
 
+.reset {
+  background-color:#FFFFFF ;
+  color: #000000;
+  border: solid red 2px;
+  width: 75px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 16px;
+}
 canvas {
   margin: 10px 5px;
   order: 2;
