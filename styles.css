@@ -85,6 +85,15 @@ background-color: #F36A24;
   margin:auto;
 }
 
+.game-over {
+  width: 100px;
+  height: 75px;
+  border: solid 5px red;
+  outline: none;
+  font-size: 30px;
+  margin:auto;
+}
+
 canvas {
   margin: 10px 5px;
   order: 2;
