@@ -3,6 +3,7 @@ const assert = chai.assert;
 const Ball = require('../lib/ball.js');
 const Stadium = require('../lib/world.js');
 const Paddle = require('../lib/paddle.js');
+const Brick = require('../lib/brick.js');
 
 describe('Ball and World Interactions', function() {
 
@@ -77,5 +78,17 @@ describe('Ball and World Interactions', function() {
       ball.bounceRight();
       assert.equal(ball.x, 330);
     });
+
+    it('should change Y direction, when it collides with the brick', function(){
+     var ball = new Ball({y:54});
+     var brick = new Brick({y:25});
+     var stadium = new Stadium();
+     stadium.blockDetection(brick);
+     assert.equal(ball.y, 54);
+     stadium.makeBrickRowRaiders();
+     ball.moveUp();
+     stadium.blockDetection(brick);
+     assert.equal(ball.y, 50);
+   });
 
 });
