@@ -13,7 +13,7 @@ describe('Stadium', function() {
     });
 
     it('should have a default height', function() {
-      assert.equal(stadium.height, 500);
+      assert.equal(stadium.height, 600);
     });
   });
 });
