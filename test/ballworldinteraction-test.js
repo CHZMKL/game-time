@@ -49,16 +49,33 @@ describe('Ball and World Interactions', function() {
       stadium.BallCollideWithPaddle(paddle);
       assert.equal(ball.y, 586);
       ball.moveDown();
-      assert.equal(ball.y,590);
       stadium.BallCollideWithPaddle(paddle);
       ball.moveUp();
       assert.equal(ball.y, 586);
     });
 
-    it.skip('should change X direction to the right, when it collides with the right side of the paddle', function(){
+    it('should change X direction to the right, when it collides with the right side of the paddle', function(){
+      var ball = new Ball({x:249});
+      var paddle = new Paddle({x:250});
+      var stadium = new Stadium();
+      stadium.BallCollideWithPaddle(paddle);
+      assert.equal(ball.x, 249);
+      ball.moveRight();
+      stadium.BallCollideWithPaddle(paddle);
+      ball.bounceLeft();
+      assert.equal(ball.x, 253);
     });
 
-    it.skip('should change X direction to the left, when it collides with the left side of the paddle', function(){
+    it('should change X direction to the left, when it collides with the left side of the paddle', function(){
+      var ball = new Ball({x:334});
+      var paddle = new Paddle({x:250});
+      var stadium = new Stadium();
+      stadium.BallCollideWithPaddle(paddle);
+      assert.equal(ball.x, 334);
+      ball.moveLeft();
+      stadium.BallCollideWithPaddle(paddle);
+      ball.bounceRight();
+      assert.equal(ball.x, 330);
     });
 
 });
