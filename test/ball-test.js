@@ -13,7 +13,7 @@ describe('Ball', function() {
     });
 
     it('should have a default y coordinate', function() {
-      assert.equal(ball.y, 500);
+      assert.equal(ball.y, 600);
     });
 
     it('should have a default height', function() {
@@ -27,36 +27,13 @@ describe('Ball', function() {
     it('should be able to move right', function(){
       assert.equal(ball.x, 250);
       ball.moveRight();
-      assert.equal(ball.x, 252);
+      assert.equal(ball.x, 254);
     });
 
     it('should be able to move up', function(){
-      assert.equal(ball.y, 500);
+      assert.equal(ball.y, 600);
       ball.moveUp();
-      assert.equal(ball.y, 498);
+      assert.equal(ball.y, 596);
     });
 });
 });
-
-
-    //
-    // it('should change x direction when it hits left side', function(){
-    //   var ball = new Ball({y:0, x: 13, speedX: -2});
-    //   ball.collisonDetectionX();
-    //   assert.equal(ball.x, 13);
-    //   ball.moveRight();
-    //   assert.equal(ball.x, 11);
-    //   ball.collisonDetectionX();
-    //   ball.moveRight();
-    //   assert.equal(ball.x, 13);
-    // });
-    //
-    // it('should change x direction when it hits right side', function(){
-    //   var ball = new Ball({y:0, x: 488, speedX: 2});
-    //   ball.collisonDetectionX();
-    //   assert.equal(ball.x, 488);
-    //   ball.moveRight();
-    //   assert.equal(ball.x, 490);
-    //   ball.collisonDetectionX();
-    //   ball.moveRight();
-    //   assert.equal(ball.x, 488);

@@ -12,7 +12,7 @@ describe('Paddle', function() {
     });
 
     it('should have a default y coordinate', function() {
-      assert.equal(paddle.y, 490);
+      assert.equal(paddle.y, 590);
     });
 
     it('should have a default width', function() {

@@ -3,7 +3,7 @@ const assert = chai.assert;
 const Ball = require('../lib/ball.js');
 const Stadium = require('../lib/world.js');
 
-describe('Ball and World Interactions', function() {
+describe('Ball Interactions with Other Objects', function() {
 
     it('should change y direction when it hits y=0 of the world', function(){
       var ball = new Ball({y:2});
