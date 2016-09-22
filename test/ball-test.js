@@ -30,10 +30,22 @@ describe('Ball', function() {
       assert.equal(ball.x, 254);
     });
 
+    it('should be able to move left', function(){
+      assert.equal(ball.x, 254);
+      ball.moveLeft();
+      assert.equal(ball.x, 250);
+    });
+
     it('should be able to move up', function(){
       assert.equal(ball.y, 600);
       ball.moveUp();
       assert.equal(ball.y, 596);
+    });
+
+    it('should be able to move down', function(){
+      assert.equal(ball.y, 596);
+      ball.moveDown();
+      assert.equal(ball.y, 600);
     });
 });
 });
